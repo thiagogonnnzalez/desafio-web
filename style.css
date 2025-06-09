@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #b28b5a;
+  color: #1a1a1a;
+  text-align: center;
+}
+/* -----------------------HEADER----------------------- */
+.banner {
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.titulo-menu {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 20px;
+}
+
+#panelhamburguesa {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 15vh;
+    left: -1000px;
+    transition: left .7s ease;
+}
+
+#panelhamburguesa:target {
+    left: 0;
+}
+
+ /* Ocultar el botón de cerrar por defecto */
+#cerrar {
+    display: none;
+}
+
+/* Cuando el panel está visible, ocultar el botón de abrir y mostrar el de cerrar */
+#panelhamburguesa:target ~ header nav #abrir {
+    display: none;
+}
+
+#panelhamburguesa:target ~ header nav #cerrar {
+    display: inline-block;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo {
+  height: 100px;
+}
+
+.icon {
+  height: 40px;
+}
+/* -----------------------HEADER----------------------- */
+/* -----------------------MAIN----------------------- */
+.section {
+  margin: 40px 0;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.product {
+  margin-bottom: 30px;
+}
+
+.product img {
+  width: 200px;
+  max-width: 90%;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+/* -----------------------MAIN----------------------- */
