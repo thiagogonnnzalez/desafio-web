@@ -6,15 +6,20 @@ body {
   text-align: center;
 }
 /* -----------------------HEADER----------------------- */
+header {
+  position: sticky;
+  top: 0;
+}
+
 .banner {
   background-color: #000;
-  color: #fff;
+  color: floralwhite;
   padding: 8px;
   font-size: 14px;
 }
 
 .titulo-menu {
-    color: #000;
+    color: floralwhite;
     text-decoration: none;
     display: inline-block;
     text-align: center;
@@ -33,15 +38,13 @@ body {
 }
 
 #panelhamburguesa:target {
-    left: 0;
+    left: 2%;
 }
 
- /* Ocultar el botón de cerrar por defecto */
 #cerrar {
     display: none;
 }
 
-/* Cuando el panel está visible, ocultar el botón de abrir y mostrar el de cerrar */
 #panelhamburguesa:target ~ header nav #abrir {
     display: none;
 }
@@ -66,35 +69,88 @@ body {
 }
 /* -----------------------HEADER----------------------- */
 /* -----------------------MAIN----------------------- */
-.section {
-  margin: 40px 0;
+.bloque-section {
+  margin: 40px 100px;
+
 }
 
 h2 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.product {
+.producto {
   margin-bottom: 30px;
 }
 
-.product img {
-  width: 200px;
+.producto img {
+  width: 400px;
   max-width: 90%;
 }
 
-.product-title {
+.letra-producto {
   font-weight: bold;
   margin-top: 10px;
 }
 
-.product-row {
+.producto-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 40px;
   flex-wrap: wrap;
 }
+
+.musica-section {
+  background-image: linear-gradient(to right, rgb(0 0 0 / .3), rgb(0 0 0 / .3)), url(./multimedia/fondotravis.jpg)
+
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: floralwhite;
+  padding: 50px;
+}
+
+.link-musica {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 40px;
+}
+
+.link-musica a img{
+  width: 300px;
+}
+
+.link-album {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+}
+
+.link-album p {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: floralwhite;
+}
+
+.link-album a img {
+  width: 400px;
+}
 /* -----------------------MAIN----------------------- */
+/* -----------------------FOOTER----------------------- */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  padding: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: floralwhite;
+}
+/* -----------------------FOOTER----------------------- */
